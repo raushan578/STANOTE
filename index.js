@@ -15,7 +15,7 @@ export const saveState = (key, value) => {
     storage.set(key, JSON.stringify(value));
   };
 
-//   load the val by key
+// load the val by key 
   export const loadState = (key) => {
     const serializedState = storage.getString(key);
     return serializedState ? JSON.parse(serializedState) : undefined;
